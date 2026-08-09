@@ -13,7 +13,9 @@ document.addEventListener('DOMContentLoaded', async () => {
   setupThemeToggle();
   
   // Initial dataset generation
-  generateDataset(500);
+  const sizeSelect = document.getElementById('select-dataset-size');
+  const initialSize = sizeSelect ? parseInt(sizeSelect.value, 10) || 30 : 30;
+  generateDataset(initialSize);
   
   // Load initial algorithms
   await loadAlgorithms();
@@ -21,9 +23,19 @@ document.addEventListener('DOMContentLoaded', async () => {
   // Bind controls
   document.getElementById('btn-load-race').addEventListener('click', loadAlgorithms);
   document.getElementById('btn-randomize-dataset').addEventListener('click', () => {
-    generateDataset(500);
+    const sizeSelect = document.getElementById('select-dataset-size');
+    const size = sizeSelect ? parseInt(sizeSelect.value, 10) || 30 : 30;
+    generateDataset(size);
     resetPlayroom();
   });
+
+  if (sizeSelect) {
+    sizeSelect.addEventListener('change', () => {
+      const size = parseInt(sizeSelect.value, 10) || 30;
+      generateDataset(size);
+      resetPlayroom();
+    });
+  }
   
   document.getElementById('btn-play').addEventListener('click', togglePlay);
   document.getElementById('btn-next').addEventListener('click', stepNext);

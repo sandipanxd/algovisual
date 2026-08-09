@@ -80,6 +80,7 @@
             <option value="heapSort" <%= algo1 === 'heapSort' ? 'selected' : '' %>>Heap Sort</option>
             <option value="mergeSort" <%= algo1 === 'mergeSort' ? 'selected' : '' %>>Merge Sort</option>
             <option value="countingSort" <%= algo1 === 'countingSort' ? 'selected' : '' %>>Counting Sort</option>
+            <option value="radixSort" <%= algo1 === 'radixSort' ? 'selected' : '' %>>Radix Sort</option>
           </select>
         </div>
         <div class="flex items-center gap-2">
@@ -92,6 +93,7 @@
             <option value="heapSort" <%= algo2 === 'heapSort' ? 'selected' : '' %>>Heap Sort</option>
             <option value="mergeSort" <%= algo2 === 'mergeSort' ? 'selected' : '' %>>Merge Sort</option>
             <option value="countingSort" <%= algo2 === 'countingSort' ? 'selected' : '' %>>Counting Sort</option>
+            <option value="radixSort" <%= algo2 === 'radixSort' ? 'selected' : '' %>>Radix Sort</option>
           </select>
         </div>
         <div class="flex items-center gap-2">
@@ -104,6 +106,7 @@
             <option value="heapSort" <%= algo3 === 'heapSort' ? 'selected' : '' %>>Heap Sort</option>
             <option value="mergeSort" <%= algo3 === 'mergeSort' ? 'selected' : '' %>>Merge Sort</option>
             <option value="countingSort" <%= algo3 === 'countingSort' ? 'selected' : '' %>>Counting Sort</option>
+            <option value="radixSort" <%= algo3 === 'radixSort' ? 'selected' : '' %>>Radix Sort</option>
           </select>
         </div>
         <div class="flex items-center gap-2">
@@ -116,13 +119,23 @@
             <option value="heapSort" <%= algo4 === 'heapSort' ? 'selected' : '' %>>Heap Sort</option>
             <option value="mergeSort" <%= algo4 === 'mergeSort' ? 'selected' : '' %>>Merge Sort</option>
             <option value="countingSort" <%= algo4 === 'countingSort' ? 'selected' : '' %>>Counting Sort</option>
+            <option value="radixSort" <%= algo4 === 'radixSort' ? 'selected' : '' %>>Radix Sort</option>
           </select>
         </div>
       </div>
 
       <div class="flex items-center gap-2 flex-wrap">
+        <div class="flex items-center gap-1">
+          <span class="text-[10px] text-slate-400 font-technical uppercase tracking-wider">Size:</span>
+          <select id="select-dataset-size" class="algo-select">
+            <option value="30" selected>30 items</option>
+            <option value="50">50 items</option>
+            <option value="100">100 items</option>
+            <option value="500">500 items</option>
+          </select>
+        </div>
         <button id="btn-load-race" class="tech-btn tech-btn-primary text-xs px-4 py-2.5 rounded font-bold uppercase tracking-wider">Load Algorithms</button>
-        <button id="btn-randomize-dataset" class="tech-btn text-xs px-3 py-2.5 rounded font-bold uppercase tracking-wider">New Dataset (500)</button>
+        <button id="btn-randomize-dataset" class="tech-btn text-xs px-3 py-2.5 rounded font-bold uppercase tracking-wider">New Dataset</button>
       </div>
     </div>
 

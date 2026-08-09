@@ -118,4 +118,11 @@ describe('AlgoVisual Routes', () => {
     expect(res.text).toContain('Graph Editor');
     expect(res.text).toContain('graph-editor-canvas');
   });
+
+  test('GET /race should load the multi-agent algorithm race arena successfully', async () => {
+    const res = await request(app).get('/race');
+    expect(res.statusCode).toBe(200);
+    expect(res.text).toContain('4-Agent Race Room');
+    expect(res.text).toContain('racePlayer.js');
+  });
 });
