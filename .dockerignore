@@ -1,0 +1,15 @@
+node_modules
+npm-debug.log
+.git
+.github
+.gitignore
+.env
+Dockerfile
+.dockerignore
+tests
+README.md
+ARCHITECTURE.md
+CONTRIBUTING.md
+SECURITY.md
+CODE_OF_CONDUCT.md
+ISSUES.md
