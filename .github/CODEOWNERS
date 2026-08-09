@@ -1,0 +1,53 @@
+# ==============================================================================
+# Algovisual CODEOWNERS Matrix
+# ==============================================================================
+# This file governs the automated assignment of PR reviewers based on the
+# specific directories and files being modified.
+#
+# Syntax:
+# path/to/file @username
+# path/to/dir/ @username
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. Global / Fallback Owner
+# ------------------------------------------------------------------------------
+# All files and directories not explicitly overridden below will default to
+# the primary maintainer for architectural review.
+*       @harsharajkumar-273 @sandipanxd
+
+# ------------------------------------------------------------------------------
+# 2. Backend & Infrastructure
+# ------------------------------------------------------------------------------
+# Core server, configuration, and infrastructure logic require strict review.
+/server.js                  @harsharajkumar-273
+/package.json               @harsharajkumar-273
+/package-lock.json          @harsharajkumar-273
+/render.yaml                @harsharajkumar-273
+/.github/                   @harsharajkumar-273
+
+# ------------------------------------------------------------------------------
+# 3. Frontend & Core Algorithms
+# ------------------------------------------------------------------------------
+# The visualization logic, algorithms, and core UI mechanics.
+/public/                    @sandipanxd @harsharajkumar-273
+/public/algorithms/         @sandipanxd
+/public/js/                 @sandipanxd
+/public/css/                @sandipanxd
+/views/                     @sandipanxd
+
+# ------------------------------------------------------------------------------
+# 4. Testing Suite
+# ------------------------------------------------------------------------------
+# Any modifications to the test infrastructure and test cases.
+/tests/                     @harsharajkumar-273
+
+# ------------------------------------------------------------------------------
+# 5. Documentation & Guidelines
+# ------------------------------------------------------------------------------
+# High-level architecture, contribution rules, and community standards.
+/README.md                  @harsharajkumar-273 @sandipanxd
+/ARCHITECTURE.md            @harsharajkumar-273
+/CONTRIBUTING.md            @harsharajkumar-273
+/CODE_OF_CONDUCT.md         @harsharajkumar-273
+/SECURITY.md                @harsharajkumar-273
