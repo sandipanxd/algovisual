@@ -14,23 +14,23 @@
 # ------------------------------------------------------------------------------
 # All files and directories not explicitly overridden below will default to
 # the primary maintainer for architectural review.
-*       @harsharajkumar-273 @sandipanxd
+*       @sandipanxd
 
 # ------------------------------------------------------------------------------
 # 2. Backend & Infrastructure
 # ------------------------------------------------------------------------------
 # Core server, configuration, and infrastructure logic require strict review.
-/server.js                  @harsharajkumar-273
-/package.json               @harsharajkumar-273
-/package-lock.json          @harsharajkumar-273
-/render.yaml                @harsharajkumar-273
-/.github/                   @harsharajkumar-273
+/server.js                  @sandipanxd
+/package.json               @sandipanxd
+/package-lock.json          @sandipanxd
+/render.yaml                @sandipanxd
+/.github/                   @sandipanxd
 
 # ------------------------------------------------------------------------------
 # 3. Frontend & Core Algorithms
 # ------------------------------------------------------------------------------
 # The visualization logic, algorithms, and core UI mechanics.
-/public/                    @sandipanxd @harsharajkumar-273
+/public/                    @sandipanxd
 /public/algorithms/         @sandipanxd
 /public/js/                 @sandipanxd
 /public/css/                @sandipanxd
@@ -40,14 +40,14 @@
 # 4. Testing Suite
 # ------------------------------------------------------------------------------
 # Any modifications to the test infrastructure and test cases.
-/tests/                     @harsharajkumar-273
+/tests/                     @sandipanxd
 
 # ------------------------------------------------------------------------------
 # 5. Documentation & Guidelines
 # ------------------------------------------------------------------------------
 # High-level architecture, contribution rules, and community standards.
-/README.md                  @harsharajkumar-273 @sandipanxd
-/ARCHITECTURE.md            @harsharajkumar-273
-/CONTRIBUTING.md            @harsharajkumar-273
-/CODE_OF_CONDUCT.md         @harsharajkumar-273
-/SECURITY.md                @harsharajkumar-273
+/README.md                  @sandipanxd
+/ARCHITECTURE.md            @sandipanxd
+/CONTRIBUTING.md            @sandipanxd
+/CODE_OF_CONDUCT.md         @sandipanxd
+/SECURITY.md                @sandipanxd
