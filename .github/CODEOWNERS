@@ -1,0 +1,53 @@
+# ==============================================================================
+# Algovisual CODEOWNERS Matrix
+# ==============================================================================
+# This file governs the automated assignment of PR reviewers based on the
+# specific directories and files being modified.
+#
+# Syntax:
+# path/to/file @username
+# path/to/dir/ @username
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. Global / Fallback Owner
+# ------------------------------------------------------------------------------
+# All files and directories not explicitly overridden below will default to
+# the primary maintainer for architectural review.
+*       @sandipanxd
+
+# ------------------------------------------------------------------------------
+# 2. Backend & Infrastructure
+# ------------------------------------------------------------------------------
+# Core server, configuration, and infrastructure logic require strict review.
+/server.js                  @sandipanxd
+/package.json               @sandipanxd
+/package-lock.json          @sandipanxd
+/render.yaml                @sandipanxd
+/.github/                   @sandipanxd
+
+# ------------------------------------------------------------------------------
+# 3. Frontend & Core Algorithms
+# ------------------------------------------------------------------------------
+# The visualization logic, algorithms, and core UI mechanics.
+/public/                    @sandipanxd
+/public/algorithms/         @sandipanxd
+/public/js/                 @sandipanxd
+/public/css/                @sandipanxd
+/views/                     @sandipanxd
+
+# ------------------------------------------------------------------------------
+# 4. Testing Suite
+# ------------------------------------------------------------------------------
+# Any modifications to the test infrastructure and test cases.
+/tests/                     @sandipanxd
+
+# ------------------------------------------------------------------------------
+# 5. Documentation & Guidelines
+# ------------------------------------------------------------------------------
+# High-level architecture, contribution rules, and community standards.
+/README.md                  @sandipanxd
+/ARCHITECTURE.md            @sandipanxd
+/CONTRIBUTING.md            @sandipanxd
+/CODE_OF_CONDUCT.md         @sandipanxd
+/SECURITY.md                @sandipanxd
